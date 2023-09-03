@@ -11,12 +11,16 @@
         { text: "Settings", href: "/settings" },
     ];
 </script>
-
+<!-- <style>
+    .active {
+        color: red !important;
+    }
+</style> -->
 <header>
     <!-- <p>Current URL: {$page.route.id}</p> -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="/"><i class="bi bi-file-earmark"></i></a>
             <button
                 class="navbar-toggler"
                 type="button"
