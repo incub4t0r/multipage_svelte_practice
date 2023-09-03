@@ -1,5 +1,5 @@
 <script>
-    import Layout from '../../Layout.svelte'; // Adjust the import path as needed
+    import Layout from '$lib/Layout.svelte'; // Adjust the import path as needed
     // You can add your page-specific logic here
 </script>
 
