@@ -1,13 +1,3 @@
-// // auth.js
-// import { writable } from 'svelte/store';
-
-// export const isAuthenticated = writable(false);
-
-// // create a functiont o set isAuthenticated
-// export function setAuthenticated(value) {
-//     isAuthenticated.set(value);
-// }
-
 // auth.js
 import { writable } from 'svelte/store';
 

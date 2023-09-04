@@ -33,7 +33,7 @@
                 >
                     <span class="navbar-toggler-icon" />
                 </button>
-                <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                     <ul class="navbar-nav">
                         {#each navLinks as link}
                         <li class="nav-item">
@@ -41,9 +41,7 @@
                                 class="nav-link"
                                 href={link.href}
                                 class:active={$page.route.id === link.href}
-                                aria-current={$page.route.id === link.href
-                                    ? "page"
-                                    : null}
+                                aria-current={$page.route.id === link.href ? "page" : null}
                             >
                                 {link.text}
                             </a>
@@ -62,10 +60,9 @@
                                     </li>
                                 {/each}
                                 <li>
-                                    <button class="btn btn-danger"  on:click={() => setAuthenticated(false)} >
+                                    <button class="btn btn-danger" on:click={() => setAuthenticated(false)}>
                                         Logout
                                     </button>
-                                    <!-- <a class="dropdown-item" href={setAuthenticated(false)}>Logout</a> -->
                                 </li>
                             </ul>
                         </li>
@@ -80,5 +77,4 @@
             <slot />
         </div>
     </main>
-    
 </ProtectedRoute>

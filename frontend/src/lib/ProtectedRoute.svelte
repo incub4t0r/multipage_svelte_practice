@@ -2,13 +2,13 @@
 <script>
     import { isAuthenticated, setAuthenticated } from "./auth.js";
     import { onMount } from "svelte";
-
+    import LoginForm from "./LoginForm.svelte";
     let loading = true; // Initial loading state
 
     onMount(() => {
         setTimeout(() => {
             loading = false;
-        }, 1000); // Simulate authentication check delay (remove this in production)
+        }, 0); // Simulate authentication check delay (remove this in production)
     });
 </script>
 
@@ -17,20 +17,5 @@
 {:else if $isAuthenticated}
     <slot />
 {:else}
-    <!-- Render the login screen here -->
-    <h1>Login</h1>
-    <button class="btn btn-primary" on:click={() => setAuthenticated(true)}
-        >Login</button
-    >
+    <LoginForm />
 {/if}
-
-<!-- <script>
-    import { isAuthenticated, setAuthenticated } from "./auth.js";
-</script>
-
-{#if $isAuthenticated}
-    <slot />
-{:else}
-    <h1>Login</h1>
-    <button class="btn btn-primary" on:click={() => setAuthenticated(true)}>Login</button>
-{/if} -->
