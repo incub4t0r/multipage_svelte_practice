@@ -3,7 +3,6 @@
     import { page } from "$app/stores";
     const navLinks = [
         { text: "Home", href: "/" },
-        { text: "Login", href: "/login" },
         { text: "Feed", href: "/feed" },
     ];
     const menuLinks = [
