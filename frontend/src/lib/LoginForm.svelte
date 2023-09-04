@@ -53,7 +53,7 @@
                     </div>
                     <button type="submit" class="mt-4 mb-4 btn btn-primary w-100">Login</button>
                 </form>
-                <div class="d-flex justify-content-between mb-4">
+                <div class="d-flex justify-content-between mb-2">
                     <a href="/register" class="btn btn-outline-secondary w-50 mt-2 me-2">Register</a>
                     <a href="/forgot" class="btn btn-outline-secondary w-50 mt-2 ms-2">Forgot password</a>
                 </div>
